@@ -1,0 +1,62 @@
+const quotes = [
+  {
+    quote: `
+      I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle.
+      But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.`,
+    author: 'Marilyn Monroe',
+  },
+  { quote: 'Be yourself; everyone else is already taken.', author: 'Oscar Wilde' },
+  { quote: 'Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.', author: 'Albert Einstein' },
+  { quote: 'A room without books is like a body without a soul.', author: 'Marcus Tullius Cicero' },
+  { quote: 'You only live once, but if you do it right, once is enough.', author: 'Mae West' },
+  { quote: 'Be the change that you wish to see in the world.', author: 'Mahatma Gandhi' },
+  { quote: 'In three words I can sum up everything I\'ve learned about life: it goes on.', author: 'Robert Frost' },
+  { quote: 'No one can make you feel inferior without your consent.', author: 'Eleanor Roosevelt' },
+  { quote: 'If you tell the truth, you don\'t have to remember anything.', author: 'Mark Twain' },
+  { quote: 'The purpose of our lives is to be happy.', author: 'Dalai Lama' },
+  { quote: 'Life is what happens when you’re busy making other plans.', author: 'John Lennon' },
+  { quote: 'Get busy living or get busy dying', author: 'Stephen King' },
+  { quote: 'If you want to live a happy life, tie it to a goal, not to people or things.', author: 'Albert Einstein' },
+  { quote: 'Money and success don’t change people; they merely amplify what is already there.', author: 'Will Smith' },
+  { quote: 'Your time is limited, so don’t waste it living someone else’s life.', author: 'Steve Jobs' },
+  { quote: 'The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.', author: 'Henry Ford' },
+  { quote: 'In order to write about life first you must live it.', author: 'Ernest Hemingway' },
+  { quote: 'Life is not a problem to be solved, but a reality to be experienced.', author: 'Soren Kierkegaard' },
+  { quote: 'If you want the rainbow, you gotta put up with the rain.', author: 'Dolly Parton' },
+  { quote: 'Don’t settle for what life gives you; make life better and build something.', author: 'Ashton Kutcher' },
+  { quote: 'Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this.', author: 'Celine Dion' },
+  { quote: 'Life is like riding a bicycle. To keep your balance, you must keep moving.', author: 'Albert Einstein' },
+  { quote: 'Life is really simple, but men insist on making it complicated.', author: 'Confucius' },
+  { quote: 'Life is a succession of lessons which must be lived to be understood.', author: 'Helen Keller' },
+  { quote: 'Life is like a coin. You can spend it any way you wish, but you only spend it once.', author: 'Lillian Dickson' },
+  { quote: 'Life would be tragic if it weren’t funny.', author: 'Stephen Hawking' },
+  { quote: 'Life is what we make it, always has been, always will be.', author: 'Grandma Moses' },
+  { quote: 'Life’s tragedy is that we get old too soon and wise too late.', author: 'Benjamin Franklin' },
+  { quote: 'Life is about making an impact, not making an income', author: 'Kevin Kruse' },
+  { quote: 'The two most important days in your life are the day you are born and the day you find out why.', author: 'Mark Twain' },
+  { quote: 'Too many of us are not living our dreams because we are living our fears.', author: 'Les Brown' },
+  { quote: 'Every moment is a fresh beginning.', author: 'T.S. Eliot' },
+  { quote: 'The best way to predict your future is to create it.', author: 'Abraham Lincoln' },
+  { quote: 'You must expect great things of yourself before you can do them.', author: 'Michael Jordan' },
+  { quote: 'Be happy for this moment. This moment is your life.', author: 'Omar Khayyam' },
+  { quote: 'I have learned to seek my happiness by limiting my desires, rather than in attempting to satisfy them.', author: 'John Stuart Mill' },
+  { quote: 'The secret of happiness, you see is not found in seeking more, but in developing the capacity to enjoy less.', author: 'Socrates' },
+  { quote: 'When it is obvious that goals can’t be reached, don’t adjust the goals, but adjust the action steps.', author: 'Confucius' },
+  { quote: 'It’s never too late – never too late to start over, never too late to be happy.', author: 'Jane Fonda' },
+  { quote: 'When we strive to become better than we are, everything around us becomes better too.', author: 'Paulo Coelho' },
+  { quote: 'Happy is the man who can make a living by his hobby.', author: 'George Bernard Shaw' },
+  { quote: 'There are no regrets in life, just lessons.', author: 'Jennifer Aniston' },
+  { quote: 'If we don’t change, we don’t grow. If we don’t grow, we aren’t really living.', author: 'Gail Sheehy' },
+  { quote: 'You choose the life you live. If you don’t like it, it’s on you to change it because no one else is going to do it for you.', author: 'Kim Kiyosaki' },
+  { quote: 'Life isn’t about waiting for the storm to pass, it’s about learning to dance in the rain.', author: 'Vivian Greene' },
+  { quote: 'Nobody who ever gave his best regretted it.', author: 'George Halas' },
+  { quote: 'Today, you have 100% of your life left.', author: 'Tom Landry' },
+  { quote: 'Make each day your masterpiece.', author: 'John Wooden' },
+  { quote: 'You can’t put a limit on anything. The more you dream, the farther you get.', author: 'Michael Phelps' },
+  { quote: 'The unexamined life is not worth living.', author: 'Socrates' }
+]
+
+export default function getNewQuote() {
+  const index = Math.floor((Math.random() * (quotes.length)) + 1);
+  return quotes[index];
+}

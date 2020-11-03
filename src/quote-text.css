@@ -1,0 +1,11 @@
+.quote-text .open {
+  font-size: 50px;
+}
+
+.quote-text .text {
+  font-size: 18px;
+}
+
+.quote-text .author {
+  font-style: italic;
+}
