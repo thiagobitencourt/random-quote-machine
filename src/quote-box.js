@@ -1,6 +1,7 @@
 import React from 'react';
 import { QuoteText } from './quote-text';
 import { QuoteActions } from './quote-actions';
+import { Credicts } from './credicts';
 import getNewQuote from './quotes';
 
 // eslint-disable-next-line no-undef
@@ -21,10 +22,10 @@ export class QuoteBox extends React.Component {
 
   render() {
     return (
-      <div id="quote-box">
+      <div class="jumbotron" id="quote-box">
         <QuoteText quote={this.state.quote} author={this.state.author} />
         <QuoteActions quote={this.state.quote} author={this.state.author} newQuote={() => this.newQuote()}/>
-        {/* <Credicts /> */}
+        <Credicts />
       </div>
     );
   }
