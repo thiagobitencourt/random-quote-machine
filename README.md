@@ -1,4 +1,4 @@
-# Free Code Camp Portfolio
+# Random Quote Machine
 
 This project was made as part of the [Free code camp](https://www.freecodecamp.org/) curriculum.
 
